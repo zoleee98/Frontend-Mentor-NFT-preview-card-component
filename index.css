@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    /* primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg:  hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+body, html{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 20rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--card-bg);
+    border-radius: 0.8rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.25);
+}
+.equilibrium{
+    width: 85%;
+    border-radius: 0.5rem;
+    margin: 1.2rem 0 0.7rem 0;
+}
+h1{
+    color: var(--white);
+    font-size: 1.2rem;
+    width: 83%;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+p{
+    color: var(--soft-blue);
+    font-weight: 300;
+    width: 83%;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5rem;
+}
+.eth-daysleft{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+.eth{
+    color: var(--cyan);
+    font-weight: 600;
+    margin-left: 2rem;
+}
+.eth::before{
+    content: url("images/icon-ethereum.svg");
+    position: relative;
+    top: 0.15rem;
+    right: 0.4rem;
+}
+.daysleft{
+    color: var(--soft-blue);
+    font-weight: 300;
+    margin-right: 2rem;
+}
+.daysleft::before{
+    content: url("images/icon-clock.svg");
+    position: relative;
+    top: 0.15rem;
+    right: 0.4rem;
+}
+hr{
+    width: 85%;
+    height: 0.1rem;
+    border: 0;
+    background: var(--line);
+    margin: 0.5rem 0 1.2rem 0;
+}
+.avatar{
+    color: var(--soft-blue);
+    position: relative;
+    align-self: flex-start;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+}
+.avatar::before{
+    content: "";
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("images/image-avatar.png");
+    background-size: 100%;
+    position: absolute;
+    border: 1px solid var(--white);
+    left: -2.5rem;
+}
+.avatar a{
+    color: var(--white);
+    text-decoration: none;
+}
